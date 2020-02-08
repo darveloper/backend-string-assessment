@@ -18,8 +18,15 @@
 
 
 def verbing(s):
-    """Your code goes here.  Edit this docstring."""
-    return
+    if len(s) >= 3:
+        if s.endswith("ing"):
+            return s + "ly"
+        return s + "ing"
+    else:
+        return s
+        
+
+    
 
 
 # E. not_bad
@@ -43,7 +50,8 @@ def not_bad(s):
 # Given 2 strings, a and b, return a string of the form
 #  a-front + b-front + a-back + b-back
 def front_back(a, b):
-    """Your code goes here.  Edit this docstring."""
+    if len(a) % 2 == 0:
+        a.split()
     return
 
 
